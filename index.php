@@ -17,7 +17,7 @@
 <body>
 <div class="container">
     <h3>Hello Willians!</h3>
-    <form action="calculo.php" method="POST">
+    <form action="calculo2.php" method="POST">
     <div class="form-group">
         <div class="form-group col-md-6">
             <label for="fname">First Name</label>
