@@ -7,7 +7,7 @@ if(!empty($fname) || !empty($lname)){
     $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
-    $dbName = "devmedia";
+    $dbName = "aulaphp";
 
     //$conn = new mysqli($host,$dbUsername,$dbPassword,$dbName);
     $conn = mysqli_connect($host,$dbUsername,$dbPassword,$dbName);

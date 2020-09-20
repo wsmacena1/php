@@ -15,27 +15,59 @@
 
 </head>
 <body>
-<div class="container">
-    <h3>Hello Willians!</h3>
-    <form action="calculo2.php" method="POST">
-    <div class="form-group">
-        <div class="form-group col-md-6">
-            <label for="fname">First Name</label>
-            <input class="col-4 form-control" type="text" name="fname"/>
-        <br>
-            <label for="lname">Last Name</label>
-            <input class="col-4 form-control" type="text" name="lname" />
+    <div class="container">
+        <h3>Login</h3>
+        <div class="col-md-6">
+            <form action="login.php" method="POST">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="email">User</label>
+                        <input class="form-control" type="text" name="email"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" name="password" />
+                    </div>    
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-md-4">
+                        <button class="btn btn-success botao" type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
         </div>
+    <div>
 
-    </div>    
-
-    <div class="form-group ">
-        <button class="btn btn-primary botao" type="submit">Save</button>
-    </div>
+   adsdasads
+<!-- 
+<div class="container">
+    
+    <form action="calculo2.php" method="POST">
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="fname">First Name</label>
+                <input class="form-control" type="text" name="fname"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="lname">Last Name</label>
+                <input class="form-control" type="text" name="lname" />
+            </div>
+        </div>    
+        <div class="row">
+            <div>
+                <button class="btn btn-primary botao" type="submit">Save</button>
+            </div>
+        </div>
     </form>
+</div> -->
+    
+
+        
 
     
-<div>
 </body>
 </html>
 
