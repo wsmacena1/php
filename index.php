@@ -22,19 +22,22 @@
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="email">User</label>
-                        <input class="form-control" type="text" name="email"/>
+                        <input class="form-control" type="text" name="email" required/>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="password">Password</label>
-                        <input class="form-control" type="password" name="password" />
+                        <input class="form-control" type="password" name="password" required/>
                     </div>    
                 </div>
                 <div class="row justify-content-end">
                     <div class="col-md-4">
                         <button class="btn btn-success botao" type="submit">Login</button>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="auth/register.html">Register</a>
                     </div>
                 </div>
             </form>
