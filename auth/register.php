@@ -32,6 +32,9 @@
                     <input class="form-control" type="password" name="password" required>
                 </div>
                 <button class="btn btn-success botao" type="submit">Register</button>
+                <a class="btn btn-danger" href="/php">Cancel</a>
+                
+                
                 <div class="form-group" style="color: red;">
                     <strong>
                         <?php 

@@ -18,11 +18,11 @@
     <div class="container">
         <h3>Login</h3>
         <div class="">
-            <form action="login.php" method="POST">
+            <form action="auth/login.php" method="POST">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="email">User</label>
-                        <input class="form-control" type="text" name="email" required/>
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" required/>
                     </div>
                 </div>
                 
@@ -32,8 +32,14 @@
                         <input class="form-control" type="password" name="password" required/>
                     </div>    
                 </div>
-
-                
+                <div class="row" style="color: red;">
+                    <strong>
+                        <?php 
+                            if(isset($_GET['msg']))
+                                echo $_GET['msg'];
+                        ?>
+                    </strong>
+                </div>
                 <div class="row col-md-6" align="center">
                    
                     <div class="col-4">
@@ -44,16 +50,7 @@
                         <a class="btn btn-primary" href="auth/register.php">Register</a>
                     </div>
                     
-                </div>
-
-                <div class="form-group" style="color: red;">
-                    <strong>
-                        <?php 
-                            if(isset($_GET['msg']))
-                                echo $_GET['msg'];
-                        ?>
-                    </strong>
-                </div>
+                </div>  
             </form>
         </div>
     <div>

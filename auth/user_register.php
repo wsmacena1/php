@@ -19,7 +19,7 @@ if ($mysqli->affected_rows > 0){
 }else{
     $sql = "INSERT INTO USERS ( NAME, EMAIL, PASSWORD, CREATED_AT) VALUES ('$name','$email','$password',NOW())";
 
-    if($mysqli->query($sql)=== TRUE){
+    if($mysqli->query($sql) === TRUE){
         $msg = "Register successful!";
     }else{
         $msg = "Error " . $sql . "<br>" ;
