@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="us">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,29 @@
 
 </head>
 <body>
+    
     <div class="container">
-        <h2>Register</h2>
-        <form action="register.php" method="post">
-            <div class="col-sm-6" style="background-color: blanchedalmond;">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input class="form-control" type="text" name="name" required>
+        
+        <form action="calculo2.php" method="POST">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="fname">First Name</label>
+                    <input class="form-control" type="text" name="fname"/>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input class="form-control" type="email" name="email" required>
+                <div class="form-group col-md-4">
+                    <label for="lname">Last Name</label>
+                    <input class="form-control" type="text" name="lname" />
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input class="form-control" type="password" name="password" required>
+            </div>    
+            <div class="row">
+                <div>
+                    <button class="btn btn-primary botao" type="submit">Save</button>
                 </div>
-                <button class="btn btn-success botao" type="submit">Register</button>
             </div>
-
         </form>
-
-
-
-
     </div>
+
 </body>
 </html>
+
+

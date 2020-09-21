@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <h3>Login</h3>
-        <div class="col-md-6">
+        <div class="">
             <form action="login.php" method="POST">
                 <div class="row">
                     <div class="form-group col-md-6">
@@ -32,20 +32,40 @@
                         <input class="form-control" type="password" name="password" required/>
                     </div>    
                 </div>
-                <div class="row justify-content-end">
-                    <div class="col-md-4">
+
+                
+                <div class="row col-md-6" align="center">
+                   
+                    <div class="col-4">
                         <button class="btn btn-success botao" type="submit">Login</button>
                     </div>
-                    <div>
-                        <a class="btn btn-primary" href="auth/register.html">Register</a>
+                    <br>
+                    <div class="col-4">
+                        <a class="btn btn-primary" href="auth/register.php">Register</a>
                     </div>
+                    
+                </div>
+
+                <div class="form-group" style="color: red;">
+                    <strong>
+                        <?php 
+                            if(isset($_GET['msg']))
+                                echo $_GET['msg'];
+                        ?>
+                    </strong>
                 </div>
             </form>
         </div>
     <div>
 
-   adsdasads
-<!-- 
+
+
+    
+  
+
+
+
+    <!-- 
 <div class="container">
     
     <form action="calculo2.php" method="POST">
